@@ -1,19 +1,19 @@
 package serviciocomidadomiciliio;
 
 import serviciocobro.ServicioCobro;
-import servicioenvio.ServicioEnvio;
+import servicioenvio.ServicioVerificacion;
 import servicioregistro.ServicioRegistro;
 
 public class ServicioComidaDomicilio {
 	
 	ServicioCobro cobro;
-	ServicioEnvio envio;
+	ServicioVerificacion envio;
 	ServicioRegistro registro;
 	
 	public ServicioComidaDomicilio() {
 		super();
 		this.cobro = new ServicioCobro();
-		this.envio = new ServicioEnvio();
+		this.envio = new ServicioVerificacion();
 		this.registro = new ServicioRegistro();
 	}
 	
